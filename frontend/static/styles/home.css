@@ -1,0 +1,102 @@
+.main .home-section {
+  background-image: url("/static/assets/images/home-bg.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+/* Hero */
+.main .home-section .hero-main {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+}
+.main .home-section .hero-main .hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .home-section .hero-main .hero-text-container h1 {
+  font-size: 80px;
+  font-weight: 400;
+  margin: 0;
+}
+.main .home-section .hero-main .hero-text-container h1 span {
+  font-weight: 400;
+  color: var(--primary);
+}
+.main .home-section .hero-main .hero-text-container p {
+  max-width: 600px;
+  font-size: 34px;
+  font-weight: 100;
+  margin-top: 0;
+}
+.main .home-section .hero-main .hero-text-container button {
+  width: 280px;
+  height: 59px;
+  background: var(--primary);
+  border-radius: 5px;
+  font-size: 27px;
+  font-weight: 400;
+  border: none;
+  color: #000;
+  margin-top: 67px;
+}
+.main .home-section .hero-main .hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+.main .home-section .hero-main .hero-image-container img {
+  max-height: 424px;
+  max-width: 488px;
+  height: auto;
+  width: 100%;
+}
+
+/* Desktop/Laptop */
+@media (max-width: 1200px) {
+}
+/* Dekstop/Tablet */
+@media (max-width: 992px) {
+  .main .home-section .hero-main .hero-text-container h1 {
+    font-size: 60px;
+  }
+  .main .home-section .hero-main .hero-text-container p {
+    font-size: 28px;
+  }
+  .main .home-section .hero-main .hero-text-container button {
+    font-size: 25px;
+  }
+}
+/* Tablet/Mobile Large */
+@media (max-width: 768px) {
+  .main .home-section .hero-main .hero-image-container {
+    display: none;
+  }
+  .main .home-section .hero-main .hero-text-container {
+    grid-column: 1/3;
+  }
+  .main .home-section .hero-main .hero-text-container button {
+    width: 100%;
+  }
+}
+/* Mobile */
+@media (max-width: 576px) {
+  .main .home-section .hero-main {
+    margin: 0 50px;
+  }
+  .main .home-section .hero-main .hero-text-container h1 {
+    font-size: 50px;
+  }
+  .main .home-section .hero-main .hero-text-container p {
+    font-size: 25px;
+  }
+  .main .home-section .hero-main .hero-text-container button {
+    font-size: 23px;
+  }
+}
